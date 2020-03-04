@@ -8,7 +8,7 @@ import './Transactions.css'
 import TransactionCard from './components/TransactionCard';
 import loading from '../../loader.gif';
 
-const devUrl = 'https://blockchain.info';
+const devUrl = 'https://whispering-garden-65783.herokuapp.com/';
 
 export class Transactions extends Component {
 	constructor(props) {

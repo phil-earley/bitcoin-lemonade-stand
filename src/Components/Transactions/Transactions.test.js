@@ -7,11 +7,11 @@ import MockAdapter from 'axios-mock-adapter';
 
 configure({ adapter: new Adapter() });
 
-function setup(address = '39iRJbBRqZcHu37qwxyYN3RiowZzSEmSPw') {
+function setup(address = '1EReE5Qi2ugfz4HqCoDRFoECkE3nMg7wrt') {
 	const props = {
 		transactionArrays: [
 			{
-				address: '39iRJbBRqZcHu37qwxyYN3RiowZzSEmSPw',
+				address: '1EReE5Qi2ugfz4HqCoDRFoECkE3nMg7wrt',
 				txs: [
 					{
 						out: [
