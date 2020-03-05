@@ -9,7 +9,6 @@ import TransactionCard from './components/TransactionCard';
 import loading from '../../loader.gif';
 
 const devUrl = 'https://blockchain.info';
-// const devUrl = 'https://whispering-garden-65783.herokuapp.com/';
 
 export class Transactions extends Component {
 	constructor(props) {
@@ -33,12 +32,12 @@ export class Transactions extends Component {
 
 	addToDatabase(address) {
 		var data = `mutation addNewAddress {
-			addAddress(input: { address: "${address}" })cx {
+			addAddress(input: { address: "${address}" }) {
 				id
 			}
 		}`
 
-		axios.post(`${devUrl}/graphql?query=${data}`)
+		axios.post(`https://whispering-garden-65783.herokuapp.com/graphql?query=${data}`)
 			.catch(err => console.log(err))
 	}
 
@@ -69,7 +68,7 @@ export class Transactions extends Component {
 			}
 		`)
 
-		axios.post(`${devUrl}/graphql?query=${data}`)
+		axios.post(`https://whispering-garden-65783.herokuapp.com/graphql?query=${data}`)
 			.catch(err => console.log(err))
 	}
 
